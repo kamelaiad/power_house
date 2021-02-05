@@ -426,8 +426,103 @@ header #buttons li a {
 .page_6 {
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 350vh;
     background:#1F1F1F;
     background-size: cover;
     background-position: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.page_6 .plans {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page_6 .plans div[class^="plan_"] {
+    border: 4px solid white;
+    border-radius: 15px;
+    padding: 80px;
+    text-align: center;
+
+}
+
+.page_6 .plans div[class^="plan_"] .title {
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.page_6 .plans div[class^="plan_"] h4 {
+    color: #FD7E14;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.page_6 .plans div[class^="plan_"] .class {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.page_6 .plans div[class^="plan_"] .features {
+    margin-top: 20px;
+    color: white;
+}
+.page_6 .plans div[class^="plan_"] .features p {
+    margin-bottom: 5px;
+}
+.page_6 .plans div[class^="plan_"] .features p::before {
+    content: ' - ';
+}
+.page_6 .plans div[class^="plan_"] .features p::after {
+    content: ' - ';
+}
+
+.page_6 .plans div[class^="plan_"] input[type="submit"] {
+    
+    width: 90%;
+    height: 40px;
+    margin-top: 30px;
+    outline: none;
+    border: 2px solid white ;
+    background: #FD7E14;
+    color: white;
+    font-size: .9em;
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+@media only screen and (min-width:768px) {
+    .page_6 {
+        height: 130vh;
+        flex-direction: column;
+    }
+    
+    .page_6 .plans {
+        height: 80%;
+        flex-direction: row;
+    }
+    .page_6 .plans div[class^="plan_"] {
+        border: 4px solid white;
+        border-radius: 15px;
+        padding: 20px 60px;
+        text-align: center;
+    
+}
+
+.page_6 footer {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: 6px;
+    color: white;
+    font-size: .6em;
+}
+
+
