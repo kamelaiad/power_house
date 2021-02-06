@@ -434,6 +434,7 @@ header #buttons li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .page_6 .plans {
@@ -518,7 +519,7 @@ header #buttons li a {
     
 }
 
-.page_6 footer {
+.page_6 footer h1 {
     margin-top: auto;
     margin-left: auto;
     margin-right: 6px;
